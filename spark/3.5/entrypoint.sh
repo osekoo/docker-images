@@ -18,6 +18,9 @@ elif [ "$SPARK_MODE" == "env" ]; then
   if [ -f "/workspace/spark-submit-job.sh" ]; then
     dos2unix /workspace/spark-submit-job.sh
   fi
+  if [ -f "/workspace/run-app.sh" ]; then
+    dos2unix /workspace/run-app.sh
+  fi
   echo ""
   echo "===================================================================="
   echo "Welcome to Spark environment!"
